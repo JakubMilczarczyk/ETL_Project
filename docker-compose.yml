@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  spark: 
+    build: .
+    container_name: spark-container
+    volumes:
+      - .:/app
+    environment:
+      - SPARK_MASTER_HOST=spark-master
